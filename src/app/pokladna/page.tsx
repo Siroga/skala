@@ -21,6 +21,7 @@ export default function Home() {
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [count, setCount] = useState(1);
   const [comment, setComment] = useState("");
+  const [fullScreenSt, setFullScreenSt] = useState(false);
 
   logIn();
 
@@ -40,7 +41,6 @@ export default function Home() {
   };
 
   useEffect(() => {
-    (document.getElementById("container") as any).requestFullscreen();
     console.log("useEffect");
 
     if (socket.connected) {
@@ -112,10 +112,35 @@ export default function Home() {
     setIsOpen(false);
   }
 
+  function fullScreen() {
+    console.log(fullScreenSt);
+    if (!fullScreenSt) {
+      setFullScreenSt(true);
+      (document.body as any).requestFullscreen();
+    } else {
+      setFullScreenSt(false);
+      document.exitFullscreen();
+    }
+  }
+
   return (
     <div id="container">
       <button className={styles.newButton} type="submit" onClick={addNew}>
         +
+      </button>
+      <button className="fullScreen" type="submit" onClick={fullScreen}>
+        <svg
+          width="30px"
+          height="30px"
+          viewBox="0 0 32 32"
+          id="i-fullscreen"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          stroke="currentcolor"
+          strokeWidth="2"
+        >
+          <path d="M4 12 L4 4 12 4 M20 4 L28 4 28 12 M4 20 L4 28 12 28 M28 20 L28 28 20 28" />
+        </svg>
       </button>
       <Modal
         isOpen={modalIsOpen}

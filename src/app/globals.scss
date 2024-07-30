@@ -5,6 +5,14 @@ body {
   margin: 0;
 }
 
+#container {
+  font-family: Helvetica;
+  background-color: rgb(13, 42, 62);
+  color: azure;
+  margin: 0;
+  height: 100%;
+}
+
 h1 {
   text-align: center;
   height: 70px;
@@ -199,4 +207,20 @@ h1 {
 
 nextjs-portal {
   display: none !important;
+}
+
+.fullScreen {
+  background-color: transparent;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: azure;
+  padding: 0em;
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  padding-top: 0.5em;
+  padding-bottom: 1.6em;
+  right: 20px;
+  bottom: 20px;
 }

@@ -1,0 +1,93 @@
+.modal {
+  .menuItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+
+    button {
+      width: 200px;
+      font-size: 20px;
+      background-color: rgb(248, 217, 137);
+      text-align: center;
+      font-weight: bold;
+      color: #000;
+      padding: 0.4em;
+      margin: 5px;
+      border: none;
+
+      span {
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
+
+    &.kitcnenItems {
+      button {
+        width: 100px;
+      }
+    }
+
+    &.pizzaItems {
+      width: 210px;
+      button {
+        text-align: left;
+      }
+    }
+  }
+
+  .inlineInputs {
+    display: flex;
+    margin-top: 20px;
+
+    div {
+      width: 33%;
+      font-size: 18px;
+
+      input {
+        width: 70px;
+        font-size: 18px;
+      }
+    }
+
+    .poznamka {
+      width: 150px;
+    }
+  }
+
+  .flex {
+    display: flex;
+  }
+}
+
+.newButton {
+  background-color: rgb(25, 123, 41);
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: azure;
+  padding: 1.2em;
+  position: absolute;
+  height: 60px;
+  width: 150px;
+  padding-top: 0.5em;
+  padding-bottom: 1.6em;
+  left: 20px;
+  top: 20px;
+}
+
+.pok {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 100px 100px;
+  width: 100%;
+
+  button {
+    div {
+      font-size: 16px !important;
+      font-weight: normal !important;
+      height: auto !important;
+      overflow: auto !important;
+    }
+  }
+}

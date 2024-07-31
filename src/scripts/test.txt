@@ -1,0 +1,10 @@
+pm2 start  "npm run start" --name kos --wait-ready
+pm2 startup -u user
+sudo env PATH=$PATH:/usr/bin pm2 startup systemd -u user --hp /home/user
+
+
+
+nano ~/.config/wayfire.ini
+////////
+[autostart]
+kos=/home/user/Desktop/run.sh

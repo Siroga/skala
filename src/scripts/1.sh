@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+chromium-browser http://localhost:8888/tv --user-data-dir="/home/pi/Documents/Profiles/01" --kiosk --noerrdialogs --disable-infobars --no-first-run --ozone-platform=wayland --enable-features=OverlayScrollbar --start-maximized --enable-auto-reload

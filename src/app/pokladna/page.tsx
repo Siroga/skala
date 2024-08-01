@@ -153,35 +153,41 @@ export default function Home() {
         <div className={styles.modal}>
           <div className={styles.flex}>
             <div className={`${styles.menuItems} ${styles.kitcnenItems}`}>
-              {MenuItems.map((item, i) => {
-                // Return the element. Also pass key
-                return (
-                  <button
-                    key={i}
-                    onClick={() => {
-                      addItem(item);
-                    }}
-                  >
-                    {item.shortName} {/* <br /> <span>{item.name}</span> */}
-                  </button>
-                );
-              })}
+              <div className={styles.menuHeader}>Kuchyně</div>
+              <div>
+                {MenuItems.map((item, i) => {
+                  // Return the element. Also pass key
+                  return (
+                    <button
+                      key={i}
+                      onClick={() => {
+                        addItem(item);
+                      }}
+                    >
+                      {item.shortName} {/* <br /> <span>{item.name}</span> */}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
             <div className={`${styles.menuItems} ${styles.pizzaItems}`}>
-              {PizzaItems.map((item, i) => {
-                // Return the element. Also pass key
-                return (
-                  <button
-                    key={i}
-                    onClick={() => {
-                      addItem(item);
-                    }}
-                  >
-                    {item.id} {item.shortName}{" "}
-                    {/* <br /> <span>{item.name}</span> */}
-                  </button>
-                );
-              })}
+              <div className={styles.menuHeader}>Gril</div>
+              <div>
+                {PizzaItems.map((item, i) => {
+                  // Return the element. Also pass key
+                  return (
+                    <button
+                      key={i}
+                      onClick={() => {
+                        addItem(item);
+                      }}
+                    >
+                      {item.id} {item.shortName}{" "}
+                      {/* <br /> <span>{item.name}</span> */}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           </div>
           <div className={styles.inlineInputs}>

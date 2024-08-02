@@ -11,44 +11,6 @@ export enum MenuTypeEnum {
   ALL,
 }
 
-/*
-{
-    id: 1,
-    shortName: "PAR H",
-    name: "",
-    type: MenuTypeEnum.KITCHEN,
-  },
-  {
-    id: 2,
-    shortName: "PAR K",
-    name: "",
-    type: MenuTypeEnum.KITCHEN,
-  },
-  {
-    id: 3,
-    shortName: "PAR HK",
-    name: "",
-    type: MenuTypeEnum.KITCHEN,
-  },
-  {
-    id: 4,
-    shortName: "LANG K",
-    name: "langoš",
-    type: MenuTypeEnum.KITCHEN,
-  },
-  {
-    id: 5,
-    shortName: "LANG T",
-    name: "langoš",
-    type: MenuTypeEnum.KITCHEN,
-  },
-  {
-    id: 6,
-    shortName: "LANG KT",
-    name: "langoš",
-    type: MenuTypeEnum.KITCHEN,
-  },
-  */
 export const MenuItems: IMenu[] = [
   {
     id: 1,
@@ -130,19 +92,31 @@ export const MenuItems: IMenu[] = [
   },
   {
     id: 14,
-    shortName: "POC",
-    name: "Pocevka",
-    type: MenuTypeEnum.KITCHEN,
-  },
-  {
-    id: 15,
     shortName: "POL",
     name: "",
     type: MenuTypeEnum.KITCHEN,
   },
   {
-    id: 16,
+    id: 15,
     shortName: "KL",
+    name: "",
+    type: MenuTypeEnum.KITCHEN,
+  },
+  {
+    id: 16,
+    shortName: "VPA H",
+    name: "",
+    type: MenuTypeEnum.KITCHEN,
+  },
+  {
+    id: 17,
+    shortName: "VPA K",
+    name: "",
+    type: MenuTypeEnum.KITCHEN,
+  },
+  {
+    id: 18,
+    shortName: "VPA HK",
     name: "",
     type: MenuTypeEnum.KITCHEN,
   },

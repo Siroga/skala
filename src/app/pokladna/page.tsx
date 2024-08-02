@@ -182,8 +182,7 @@ export default function Home() {
                         addItem(item);
                       }}
                     >
-                      {item.id} {item.shortName}{" "}
-                      {/* <br /> <span>{item.name}</span> */}
+                      {item.shortName} {/* <br /> <span>{item.name}</span> */}
                     </button>
                   );
                 })}

@@ -26,7 +26,7 @@ export const MenuItems: IMenu[] = [
   },
   {
     id: 3,
-    shortName: "LANG KT",
+    shortName: "LANG OB",
     name: "langoš",
     type: MenuTypeEnum.KITCHEN,
   },
@@ -80,7 +80,7 @@ export const MenuItems: IMenu[] = [
   },
   {
     id: 12,
-    shortName: "PAR HK",
+    shortName: "PAR OB",
     name: "",
     type: MenuTypeEnum.KITCHEN,
   },
@@ -116,9 +116,15 @@ export const MenuItems: IMenu[] = [
   },
   {
     id: 18,
-    shortName: "VPA HK",
+    shortName: "VPA OB",
     name: "",
     type: MenuTypeEnum.KITCHEN,
+  },
+  {
+    id: 19,
+    shortName: "HAM",
+    name: "Hamburger",
+    type: MenuTypeEnum.PIZZA,
   },
 ];
 

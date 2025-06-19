@@ -11,6 +11,7 @@ const app = next({ dev, hostname, port });
 const handler = app.getRequestHandler();
 let items = [];
 let lastIndex = 0;
+const fs = require("fs");
 
 app.prepare().then(() => {
   const httpServer = createServer(handler);

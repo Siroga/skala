@@ -124,7 +124,31 @@ export const MenuItems: IMenu[] = [
     id: 19,
     shortName: "HAM",
     name: "Hamburger",
-    type: MenuTypeEnum.PIZZA,
+    type: MenuTypeEnum.KITCHEN,
+  },
+  {
+    id: 20,
+    shortName: "KAT CH",
+    name: "",
+    type: MenuTypeEnum.KITCHEN,
+  },
+  {
+    id: 21,
+    shortName: "KAT HR",
+    name: "",
+    type: MenuTypeEnum.KITCHEN,
+  },
+  {
+    id: 22,
+    shortName: "RIZ",
+    name: "Hamburger",
+    type: MenuTypeEnum.KITCHEN,
+  },
+  {
+    id: 23,
+    shortName: "KŘ",
+    name: "",
+    type: MenuTypeEnum.KITCHEN,
   },
 ];
 
